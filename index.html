@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Club de Escalada Los Mallos | Zaragoza</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/botones.js"></script>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
+      <img src="img/losmallos.jpg" class="imgprincipal" alt=""><a class="navbar-brand titulo" href="#">Club de Escalada Los Mallos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto d-flex justify-content-between enlacesnavbar">
+            <li class="nav-item p-2">
+                <a class="nav-link enlaces3" href="#index">Inicio</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+                <a class="nav-link enlaces3" href="#historia">Historia</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+              <a class="nav-link enlaces3" href="#actividades">Actividades</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+                <a class="nav-link enlaces3" href="#instalaciones">Instalaciones</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+                <a class="nav-link enlaces3" href="#resenas">Reseñas</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+                <a class="nav-link enlaces3" href="#haztesocio">¡Házte Socio!</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+                <a class="nav-link enlaces3" href="#ubicacion">Ubicación</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0 p-2">
+              <a class="nav-link enlaces3" href="#contacto">Contacto</a>
+          </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <section id="index">
+      <div class="jumbotron">
+        <h1 class="display-4 text-center textindex mb-5">¡Bienvenid@ a <b>Club de Escalada Los Mallos!</b></h1>
+        <p class="lead text-center textindex">Club de escalda formando titan@s desde hace más de 15 años</p>
+        <hr class="my-4 titul">
+        <p class="text-center mt-3 textindex">Realización de actividades | Cursos de iniciación | Entrenos | Quedadas y competiciones</p>
+        <p class="lead text-center mt-5">
+          <a class="btn btn-outline-light btn-lg animation" href="#historia" role="button">Sobre Nosotros</a>
+        </p>
+      </div>
+    </section>
+    <section  class="mt-5" id="historia" >
+    <h1 class="text-center titulos">HISTORIA</h1>
+
+    </section>
+    <hr class="hrsect"/>
+
+
+    <section class="mt-5" id="actividades">
+      <h1 class="text-center titulos">ACTIVIDADES</h1>
+
+      </section>
+
+      <hr class="hrsect"/>
+    <section class="mt-5" id="instalaciones">
+    <h1 class="text-center titulos mb-4">INSTALACIONES</h1>
+    <div id="carouselExampleIndicators" class="carousel slide fotos mx-auto" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </section>
+
+    <hr class="hrsect"/>
+    <section class="mt-5" id="resenas">
+    <h1 class="text-center titulos mb-4">RESEÑAS</h1>
+    <div class="row d-flex justify-content-between">
+      <div class="card mr-3">
+        <img class="card-img-top imgcard" src="img/norop.png" alt="">
+        <div class="card-body">
+          <h5 class="card-title">NOROP.ES</h5>
+          <p class="card-text">Reseñas de las diferentes áreas de boulder en Albarracín.</p>
+          <a href="https://www.chalkviech.de/norop.es/areas.html" target="_blank" class="btn btn-secondary">NOROP Web</a>
+        </div>
+      </div>
+      <div class="card mr-3">
+        <img class="card-img-top imgcard" src="img/27.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">27 Crags</h5>
+            <p class="card-text">Encuentra las mejores rutas de escalada en roca.</p><br/>
+            <a href="https://27crags.com/" target="_blank" class="btn btn-secondary">27Crags Web</a>
+          </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top imgcard" src="img/enlavertical.gif" alt="">
+          <div class="card-body">
+            <h5 class="card-title">En la vertical</h5>
+            <p class="card-text">Encuentra las mejores rutas de escalada en roca.</p><br/>
+            <a href="https://www.enlavertical.com/escuelas/view/192" target="_blank" class="btn btn-secondary">Enlavertical Web</a>
+          </div>
+      </div>
+    </div>
+    </section>
+
+    <hr class="hrsect"/>
+    <section class="mt-5" id="haztesocio">
+      <h1 class="text-center titulos mb-4">¡HÁZTE SOCIO!</h1>
+  <p class="lead grey-text text-center w-responsive mx-auto mb-5">¿Qué es lo que debo hacer para hacerme socio del CLub de Escalada Los mallos?</p>
+  <div class="row">
+    <div class="col-md-4 mb-md-0 mb-5">
+      <div class="row">
+        <div class="col-lg-10 col-md-9 col-10">
+          <h4 class="font-weight-bold tit text-center"> <i class="fas fa-phone blue-text fa-1x"></i> Contactarnos</h4>
+          <hr class="hrfoot">
+          <p class="grey-text textsocio">Ya sea a través de nuestras <a class="enlaces2" href="#contacto">redes sociales, teléfono o correo electrónico</a>, contáctanos y te informaremos acerca de cualquier duda.</p>
+          <a class="btn btn-outline-dark btn-sm">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-md-0 mb-5">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-2">
+        </div>
+        <div class="col-lg-10 col-md-9 col-10">
+          <h4 class="font-weight-bold tit text-center">2. Conocernos</h4>
+          <hr class="hrfoot">
+          <p class="grey-text textsocio">Ya sea a través de nuestras <a class="enlaces2" href="#contacto">redes sociales, teléfono o correo electrónico</a>, contáctanos y te informaremos acerca de cualquier duda.</p>
+          <a class="btn btn-outline-dark btn-sm">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-2">
+        </div>
+         <div class="col-lg-10 col-md-9 col-10">
+          <h4 class="font-weight-bold tit text-center">3. Entrenar</h4>
+          <hr class="hrfoot">
+          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <a class="btn btn-outline-dark btn-sm">Learn more</a>
+        </div>
+       </div>
+      </div>
+   </div>
+</section>
+
+
+    <hr class="hrsect"/>
+    <section class="mt-3 mb-4" id="ubicacion">
+    <h1 class="text-center titulos">UBICACIÓN</h1>
+      <div class="container" id="map">
+        <script src="js/map.js"></script>
+      </div>
+    </section>
+    <hr class="hrsect mb-5"/>
+
+
+    <footer class="page-footer font-small unique-color-dark" id="contacto">           
+        <div class="container-fluid foot">
+          <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h5 class="mb-0 titulofooter2">¡Síguenos en las redes sociales!</h5>
+            </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <a class="enlaces" href="https://www.facebook.com/groups/269949647508/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <a class="enlaces" href="https://twitter.com/Hector02466415" target="_blank" title="Google+">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <a class="enlaces" href="https://www.instagram.com/clubescaladalosmallos/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+            </div>   
+          </div>
+        </div>
+        </div>
+        <hr class="hrfoot mb-4"/>
+
+        <div class="container-fluid">
+        <div class="row footcol">
+            <div class="col mx-2">
+              <h5 class="text-center text-uppercase font-weight-bold titulosfoot">El club</h5>
+              <hr class="hrfoot mb-4"/>
+              <p class="text-center text2footer">Quieres entrenar,</p>
+              <p class="text-center text2footer">realizar actividades</p>
+              <p class="text-center text2footer">y socializarte.</p>
+              <p class="text-center"><a class="enlacesfoot" href="#socios">¡Hazte Socio!</a></p>
+            </div>
+            <div class="col mx-2">
+              <h5 class="text-center text-uppercase font-weight-bold titulosfoot">Acerca de</h5>
+              <hr class="hrfoot mb-4"/>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center"><a class="enlacesfoot" href="#index">Inicio</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#historia">Historia</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#actividades">Actividades</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#instalaciones">Instalaciones</a></p>
+                </div>
+                <div class="col">
+                  <p class="text-center"><a class="enlacesfoot" href="#resenas">Reseñas</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#haztesocio">¡Hazte socio!</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#ubicacion">Ubicación</a></p>
+                  <p class="text-center"><a class="enlacesfoot" href="#contacto">Contacto</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col mx-2">
+              <h5 class="text-center text-uppercase font-weight-bold titulosfoot">Contacto</h5>
+              <hr class="hrfoot mb-4"/>
+              <p class="text-center text2footer">
+                <i class="fas fa-home mr-3"></i>C/ San Antonio Abad, 53 (Zaragoza)</p>
+              <p class="text-center text2footer">
+                <i class="fas fa-envelope mr-3"></i>clubescaladalosmallos@gmail.com</p>
+              <p class="text-center text2footer">
+                <i class="fas fa-phone mr-3"></i>+ 34 616561281</p>
+              <p class="text-center text2footer">
+                <i class="fas fa-print mr-3"></i>+ 34 637891853</p>   
+           </div>
+        </div>
+      </div>
+          <div class="container-fluid foot">
+            <div class="footer-copyright text-center py-3 titulofooter2">© 2019 Copyright:
+              <a class="enlaces" href="https://hectorsandovalcordon.github.io"> Héctor Sandoval</a>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
