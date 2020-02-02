@@ -66,6 +66,9 @@ section {
   color: white;
   text-decoration: none;
 }
+.pt-3-half {
+  padding-top: 1.4rem;
+  }
 .enlaces:hover{
   color: black;
   text-decoration: none;
@@ -100,6 +103,9 @@ section {
 .fotos{
   width: 50%;
 }
+.insta{
+  border: 1.5px solid rgba(116, 116, 116);
+}
 /*RESEÑAS*/
 .tarjetas{
   display: inline-block;
@@ -109,8 +115,9 @@ section {
 }
 .imgcard {
   width: 100%;
-  height: 60%;
-  padding: 5%;
+  padding: 1%;
+  border: 1px solid rgba(116, 116, 116);
+  margin-top: 4%;
 }
 /*HAZTESOCIO*/
 .socio{

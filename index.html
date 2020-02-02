@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -19,6 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/botones.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/animation.js"></script>
   </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
@@ -68,21 +70,22 @@
       </div>
     </section>
     <section  class="mt-5" id="historia" >
-    <h1 class="text-center titulos">HISTORIA</h1>
+    <h1 class="text-center titulos wow slideInDown">HISTORIA</h1>
 
     </section>
     <hr class="hrsect"/>
 
 
     <section class="mt-5" id="actividades">
-      <h1 class="text-center titulos">ACTIVIDADES</h1>
+      <h1 class="text-center titulos wow slideInDown">ACTIVIDADES</h1>
 
       </section>
 
       <hr class="hrsect"/>
     <section class="mt-5" id="instalaciones">
-    <h1 class="text-center titulos mb-4">INSTALACIONES</h1>
-    <div id="carouselExampleIndicators" class="carousel slide fotos mx-auto" data-ride="carousel">
+    <h1 class="text-center titulos mb-4 wow slideInDown">INSTALACIONES</h1>
+    <div class="row">
+    <div id="carouselExampleIndicators" class="carousel slide fotos" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -108,86 +111,94 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <div class="col ml-3 insta p-4">
+      <p class="text-center textsocio mt-4">El rocódromo cuenta con cerca de 100 m2 de paredes escalables de todos los niveles e inclinaciones, campusboard y moonboard acondicionada a 20º de desplome.</p>
+      <hr class="hrfoot">
+      <p class="text-center textsocio">Disponemos de una sala de musculación y entrenamiento de fuerza con 5 tablas multipresas, un espacio para el entrenamiento funcional recientemente reformado, vestuario, duchas, aseo y un área común con electrodomésticos.</p>
+      <hr class="hrfoot">
+      <p class="text-center textsocio">En el club, cada soci@ tiene su llave y su clave de la cerradura electrónica para tener acceso libre de 8:00a.m. a 23:59p.m. durante todos los días del año a todas las áreas del rocódromo. La cuota mensual es de 28 euros/mes (más 5 euros de fianza por la llave el primer mes) e incluye magnesio en la sala, agua y acceso al material común tanto de escalada como de la zona de entrenamiento. El horario principal de atención a nuevas altas es Miércoles de 10:30 a 13:30 (u otros, según disponibilidad de los responsables).</p>
+    </div>
+    </div>
     </section>
 
     <hr class="hrsect"/>
-    <section class="mt-5" id="resenas">
-    <h1 class="text-center titulos mb-4">RESEÑAS</h1>
-    <div class="row d-flex justify-content-between">
-      <div class="card mr-3">
-        <img class="card-img-top imgcard" src="img/norop.png" alt="">
-        <div class="card-body">
+    <section class="mx-auto mb-4" id="resenas">
+    <h1 class="text-center titulos mb-4 wow slideInDown animated">RESEÑAS</h1>
+    <div class="row d-flex justify-content-between p-3 mx-auto">
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-4 card animated finite fadeInLeft delay-0.3s">
+        <img src="img/norop.png" class="card-img-top imgcard mx-auto" alt="...">
+        <div class="card-body text-center">
           <h5 class="card-title">NOROP.ES</h5>
           <p class="card-text">Reseñas de las diferentes áreas de boulder en Albarracín.</p>
-          <a href="https://www.chalkviech.de/norop.es/areas.html" target="_blank" class="btn btn-secondary">NOROP Web</a>
+          <a href="https://www.chalkviech.de/norop.es/areas.html" target="_blank"><button class="btn btn-secondary">Ir a</button></a>
         </div>
       </div>
-      <div class="card mr-3">
-        <img class="card-img-top imgcard" src="img/27.png" alt="">
-          <div class="card-body">
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-4 card animated finite fadeInDown delay-0.5s">
+        <img class="card-img-top imgcard mx-auto" src="img/27.png" alt=""></br/>
+          <div class="card-body text-center">
             <h5 class="card-title">27 Crags</h5>
-            <p class="card-text">Encuentra las mejores rutas de escalada en roca.</p><br/>
-            <a href="https://27crags.com/" target="_blank" class="btn btn-secondary">27Crags Web</a>
+            <p class="card-text">Encuentra las mejores rutas de escalada en roca.</p>
+            <a href="https://27crags.com/" target="_blank" class="btn btn-secondary">Ir a</a>
           </div>
       </div>
-      <div class="card">
-        <img class="card-img-top imgcard" src="img/enlavertical.gif" alt="">
-          <div class="card-body">
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-4 card animated finite fadeInRight delay-0.6s">
+        <img class="card-img-top imgcard mx-auto mt-5 mb-5" src="img/enlavertical.gif" alt=""></br/>
+          <div class="card-body text-center mt-5">
             <h5 class="card-title">En la vertical</h5>
-            <p class="card-text">Encuentra las mejores rutas de escalada en roca.</p><br/>
-            <a href="https://www.enlavertical.com/escuelas/view/192" target="_blank" class="btn btn-secondary">Enlavertical Web</a>
+            <p class="card-text mb-sm-3">Encuentra las mejores rutas de escalada en roca.</p>
+            <a href="https://www.enlavertical.com/escuelas/view/192" target="_blank" class="btn btn-secondary">Ir a</a>
           </div>
       </div>
     </div>
     </section>
 
     <hr class="hrsect"/>
-    <section class="mt-5" id="haztesocio">
-      <h1 class="text-center titulos mb-4">¡HÁZTE SOCIO!</h1>
-  <p class="lead grey-text text-center w-responsive mx-auto mb-5">¿Qué es lo que debo hacer para hacerme socio del CLub de Escalada Los mallos?</p>
+    <section id="haztesocio">
+      <h1 class="text-center titulos mb-4 wow slideInDown animated">¡HÁZTE SOCIO!</h1>
+      <div class="animated finite fadeInLeft">
+      <p class="lead grey-text text-center w-responsive mx-auto mb-5">¿Qué es lo que debo hacer para hacerme socio del CLub de Escalada Los mallos?</p>
   <div class="row">
     <div class="col-md-4 mb-md-0 mb-5">
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-lg-10 col-md-9 col-10">
           <h4 class="font-weight-bold tit text-center"> <i class="fas fa-phone blue-text fa-1x"></i> Contactarnos</h4>
           <hr class="hrfoot">
-          <p class="grey-text textsocio">Ya sea a través de nuestras <a class="enlaces2" href="#contacto">redes sociales, teléfono o correo electrónico</a>, contáctanos y te informaremos acerca de cualquier duda.</p>
-          <a class="btn btn-outline-dark btn-sm">Learn more</a>
+          <p class="grey-text text-center textsocio">Ya sea a través de nuestras <a class="enlaces2" href="#contacto">redes sociales, teléfono o correo electrónico</a>, contáctanos y te informaremos acerca de cualquier duda.</p>
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-md-0 mb-5">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-2">
+      <div class="row mb-5">
+        <div class="col-lg-2 col-md-3 col-2 ">
         </div>
         <div class="col-lg-10 col-md-9 col-10">
           <h4 class="font-weight-bold tit text-center">2. Conocernos</h4>
           <hr class="hrfoot">
-          <p class="grey-text textsocio">Ya sea a través de nuestras <a class="enlaces2" href="#contacto">redes sociales, teléfono o correo electrónico</a>, contáctanos y te informaremos acerca de cualquier duda.</p>
-          <a class="btn btn-outline-dark btn-sm">Learn more</a>
+          <p class="grey-text text-center textsocio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-lg-2 col-md-3 col-2">
         </div>
          <div class="col-lg-10 col-md-9 col-10">
           <h4 class="font-weight-bold tit text-center">3. Entrenar</h4>
           <hr class="hrfoot">
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <p class="grey-text text-center textsocio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <a class="btn btn-outline-dark btn-sm">Learn more</a>
         </div>
        </div>
       </div>
    </div>
+  </div>
 </section>
 
 
     <hr class="hrsect"/>
     <section class="mt-3 mb-4" id="ubicacion">
-    <h1 class="text-center titulos">UBICACIÓN</h1>
+    <h1 class="text-center titulos wow slideInDown animated">UBICACIÓN</h1>
       <div class="container" id="map">
         <script src="js/map.js"></script>
       </div>
@@ -199,10 +210,10 @@
         <div class="container-fluid foot">
           <div class="container">
           <div class="row py-4 d-flex align-items-center">
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <div class="col-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
               <h5 class="mb-0 titulofooter2">¡Síguenos en las redes sociales!</h5>
             </div>
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <div class="col-6 col-lg-7 text-center text-md-right">
               <a class="enlaces" href="https://www.facebook.com/groups/269949647508/" target="_blank" title="Facebook">
                 <i class="fab fa-facebook-f white-text mr-4"> </i>
               </a>
