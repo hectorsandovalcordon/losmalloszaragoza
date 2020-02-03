@@ -48,7 +48,7 @@ section {
   display: flex;
   justify-content: center;
 }
-.navbar{
+.colornav{
     background-color: rgba(116, 116, 116, 0.76);
 }
 .enlacesnavbar{
