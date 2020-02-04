@@ -59,14 +59,48 @@ section {
   margin-right: 4%;
 }
 .enlaces3{
-  color: white;
-  font-size: 17px;
-  text-decoration: none;
+  color: white !important;
+  font-size: 17px !important;
+  text-decoration: none !important;
 }
 .enlaces3:hover{
-  color:black;
-  font-size: 17px;
-  text-decoration: none;
+  color:black !important;
+  font-size: 17px !important;
+  text-decoration: none !important;
+}
+.navbar-toggler-icon{
+  color: white !important;
+}
+/*acordation*/
+.acord{
+  width: 100% !important;
+  background-image: url(../img/manolo1.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+.acord1{
+  background-color: rgb(165, 165, 165);
+  width: 80% !important;
+  color: white;
+}
+
+.collapse.in { 
+  min-height: 50px;
+  border: 1px solid blue; 
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 .enlaces {
   color: white;
