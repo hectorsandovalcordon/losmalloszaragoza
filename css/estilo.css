@@ -78,10 +78,14 @@ section {
   background-repeat: none;
   background-size: cover;
 }
+.linknos{
+  text-decoration: none !important;
+}
 .acord1{
-  background-color: rgb(165, 165, 165);
+  background-color: rgba(116, 116, 116, 0.76);
   width: 80% !important;
   color: white;
+  margin-left: 50px;
 }
 
 .collapse.in { 
