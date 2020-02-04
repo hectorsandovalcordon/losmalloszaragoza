@@ -81,6 +81,12 @@ section {
 .linknos{
   text-decoration: none !important;
 }
+.textnos{
+  font-size: 20px !important;
+}
+.alin{
+  margin-left: 210px;
+}
 .acord1{
   background-color: rgba(116, 116, 116, 0.76);
   width: 80% !important;
