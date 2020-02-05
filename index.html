@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link rel="stylesheet" href="css/zabuto_calendar.min.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -25,6 +26,8 @@
   <script src="js/animation.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/acordion.js"></script>
+  <script src="js/zabuto_calendar.min.js"></script>
+  <script src="js/calendar.js"></script>
 </head>
 
 <body>
@@ -47,8 +50,8 @@
       <li class="nav-item my-2 my-lg-0 p-2">
           <a class="nav-link enlaces3 text-right" href="#resenas">Reseñas</a>
       </li>
-      <li class="nav-item my-2 my-lg-0 p-2">
-          <a class="nav-link enlaces3 text-right" href="#haztesocio">¡Házte Socio!</a>
+      <li class="nav-item my-2 my-lg-0 p-2 text-right">
+          <button class="btn btn-outline-light btn-lg p-0"><a class="nav-link enlaces3" href="#haztesocio">¡Házte Socio!</a></button>
       </li>
       <li class="nav-item my-2 my-lg-0 p-2">
           <a class="nav-link enlaces3 text-right" href="#ubicacion">Ubicación</a>
@@ -170,7 +173,7 @@
 
     <section class="mt-5" id="actividades">
       <h1 class="text-center titulos wow slideInDown">ACTIVIDADES</h1>
-
+      <div class="mt-5" id="my-calendar"></div>
       </section>
 
       <hr class="hrsect"/>
@@ -247,14 +250,25 @@
     <hr class="hrsect"/>
     <section id="haztesocio">
       <h1 class="text-center titulos mb-4 wow slideInDown animated">¡HÁZTE SOCIO!</h1>
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-secondary btn-md" href="#contacto" role="button">Contáctanos</a>
+      <div class="media">
+        <i class="fas fa-book fa-2x p-2 mr-4 float-left text-white" aria-hidden="true"></i>
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      
+          <div class="media mt-3">
+            <a class="mr-3" href="#">
+              <a data-toggle="collapse" data-parent="#accordionEx5" href="#collapse30" aria-expanded="true"
+              aria-controls="collapse30" class="linknos">
+              <i class="fas fa-book fa-2x p-2 mr-4 float-left text-white" aria-hidden="true"></i>
+            </a>
+            <div class="media-body">
+              <h5 class="mt-0">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+        </div>
       </div>
-  
   </div>
 </section>
 
