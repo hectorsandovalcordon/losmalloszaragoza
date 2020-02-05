@@ -1,4 +1,5 @@
-    $(document).ready(function () {
+$(document).ready(function () {
+        //$("#date-popover").popover();
         $("#my-calendar").zabuto_calendar({
             language: "es",
             action: function () {
@@ -12,16 +13,8 @@
                 {type: "text", label: "Competición Panel", badge: "Marzo 2020"},
                 {type: "text", label: "Quedada Albarracín", badge: "Diciembre 2020"},
               ],
-            data: [
-                {
-                    "date":"2020-01-26",
-                    "badge":true,
-                    "title":"Competición Jaca",
-                    "body":"<p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
-                    "footer":"At Paisley Park",
-                    "classname":"bg-secondary"
-                  }
-            ],
+            ajax: { url:"datos.json"}
+            ,
             cell_border: true,
             today: true,
             show_days: true,
