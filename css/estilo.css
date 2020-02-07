@@ -71,6 +71,22 @@ section {
 .navbar-toggler-icon{
   color: white !important;
 }
+/*formulario*/
+.formulario{
+  border: 1.5px solid rgba(116, 116, 116);
+}
+.tit1{
+  color: blue;
+  font-weight: bold;
+}
+.tit2{
+  color: darkred;
+  font-weight: bold;
+}
+.tit3{
+  color: green;
+  font-weight: bold;
+}
 /*acordation*/
 .acord{
   width: 100% !important;
@@ -85,7 +101,7 @@ section {
   font-size: 19px !important;
 }
 .alin{
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .acord1{
   background-color: rgba(116, 116, 116, 0.76);
